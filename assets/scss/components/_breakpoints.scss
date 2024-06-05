@@ -1,0 +1,33 @@
+@media (max-width: 480px) {
+
+    :root{
+        --h1-font-size: 1.950rem;
+        --text-font-size: 1rem;
+        --smaller-font-size: 0.875rem;
+    }
+
+    #login-form{
+        width: 100%;
+        max-width: 100%; 
+
+
+        margin: 0;
+        height: 100vh;
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    #title{
+        width: 100%;
+    }
+
+    #form-login{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans serif;
+}
+
+body {
+  background-image: url(/assets/img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main-class {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:root {
+  --first-color: hsl(244, 75%, 57%);
+  --second-color: hsl(249, 64%, 47%);
+  --title-color: hsl(244, 12%, 12%);
+  --text-color: hsl(244, 4%, 36%);
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 2rem;
+  --text-font-size: 1rem;
+  --smaller-font-size: 0.875rem;
+}
+
+#login-form {
+  background-color: hsla(244, 16%, 92%, 0.6);
+  width: 100%;
+  max-width: 500px;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(20px);
+  border: 2px solid hsla(244, 16%, 92%, 0.75);
+  margin: 1.5rem;
+}
+
+#title h1 {
+  color: var(--first-color);
+  font-size: var(--h1-font-size);
+  font-weight: 600;
+}
+#title span {
+  color: var(--title-color);
+  font-weight: 600;
+}
+#title p {
+  color: var(--text-color);
+  font-size: var(--smaller-font-size);
+  margin-top: 0.6rem;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.inputs-sg {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  gap: 0.4rem;
+}
+.inputs-sg label {
+  color: var(--title-color);
+}
+
+.input-box {
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: right;
+}
+.input-box :focus {
+  border: 2px solid var(--first-color);
+}
+
+.input-text {
+  width: 100%;
+  padding: 14px;
+  border-radius: 6px;
+  border: 2px solid var(--text-color);
+  outline: none;
+  color: var(--title-color);
+  background-color: hsla(244, 16%, 92%, 0.6);
+  font-weight: 400;
+  font-size: var(--smaller-font-size);
+}
+
+.remember-me {
+  margin-top: 0.7rem;
+  font-size: var(--smaller-font-size);
+}
+.remember-me label {
+  display: flex;
+  gap: 0.7rem;
+  color: var(--text-color);
+  font-size: var(--smaller-font-size);
+}
+
+.buttons {
+  display: flex;
+  width: 0%;
+  width: 100%;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.form-button {
+  outline: none;
+  width: 100%;
+}
+
+.btn {
+  width: 100%;
+  outline: none;
+  padding: 1.1rem;
+  border-radius: 6px;
+  transition: all ease 0.6s;
+  font-weight: 600;
+  background-color: hsla(244, 16%, 92%, 0.6);
+  border: 2px solid var(--first-color);
+  color: var(--first-color);
+}
+
+.btn:hover {
+  transition: all ease 0.1 0.5s;
+  background-color: var(--first-color);
+  color: #fff;
+}
+
+.forgot-pass {
+  color: red;
+}
+
+#forgot {
+  margin-top: 1rem;
+}
+
+#forgot-password {
+  /*     border: 1px solid red;  */
+  margin-top: 1.5rem;
+  text-decoration: none;
+}
+#forgot-password a {
+  text-decoration: none;
+  font-size: var(--smaller-font-size);
+  color: var(--first-color);
+  font-weight: 500;
+  transition: all ease 0.1 0.5s;
+}
+#forgot-password a:hover {
+  color: var(--second-color);
+  transition: all ease 0.1 0.5s;
+}
+
+@media (max-width: 480px) {
+  :root {
+    --h1-font-size: 1.950rem;
+    --text-font-size: 1rem;
+    --smaller-font-size: 0.875rem;
+  }
+  #login-form {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  #title {
+    width: 100%;
+  }
+  #form-login {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
